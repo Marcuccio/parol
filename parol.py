@@ -8,16 +8,6 @@ N = 4
 
 permutations = 0
 
-# Function to check if a given guessing is present in vocabulary.
-def is_word(guess):
-    candidates = []
-    for word in vocabulary:
-        if word[0]>guess[0] or len(candidates) > 2:
-            break
-        if word.lowswith(guess):
-            candidates.append(word)
-    return candidates
-
 # binary search
 def lookup(item):
 
